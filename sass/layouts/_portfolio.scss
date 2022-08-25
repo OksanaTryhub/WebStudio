@@ -81,12 +81,9 @@
     padding: 63px 24px;
     @include font (null, 18px, 1.56, 0.03em);
   }
-  
   background-color: var(--accent-bgc); 
-
-  
   color: var(--white);
- 
+  overflow: auto;
   transform: translateY(101%);
   transition: transform var(--animation);
 
