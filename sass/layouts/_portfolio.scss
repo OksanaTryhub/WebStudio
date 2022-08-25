@@ -66,19 +66,27 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 }
+// padding: 24px 24px;
+// font-size: 16px;
+// line-height: 1.3; 
 
 .portfolio-list__overlay {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
-  padding: 63px 24px;
+  padding: 10px 24px;
+  @include font (null, 16px, 1.56, 0.03em);
+  @include mobile {
+    padding: 63px 24px;
+    @include font (null, 18px, 1.56, 0.03em);
+  }
+  
   background-color: var(--accent-bgc); 
 
-  @include font (null, 18px, 1.56, 0.03em);
+  
   color: var(--white);
-  overflow: auto;
-
+ 
   transform: translateY(101%);
   transition: transform var(--animation);
 
