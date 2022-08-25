@@ -1,0 +1,13 @@
+.subtitle {
+    @include font (null, 14px, 1.14, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    margin-bottom: 10px;
+    
+    @include tablet {
+      text-align: left;
+    }    
+  }
+  
+  

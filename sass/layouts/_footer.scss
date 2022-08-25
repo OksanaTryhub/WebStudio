@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--primary-bgc);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+  
+.footer__box {
+    align-items: center;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include desktop {
+      align-items: baseline;
+      flex-wrap:nowrap;
+  }
+}
+.footer__logo {
+    margin-bottom: 20px;
+    &--color {
+      color: var(--white);
+    }
+}
+
+.footer__subtitle {
+  color: var(--white);
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+

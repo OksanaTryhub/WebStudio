@@ -1,0 +1,66 @@
+.footer__subscription {
+  @include desktop {
+    margin-left: auto;
+  }   
+}
+
+.subscription__form {
+  @include desktop {
+    display: flex;
+  } 
+}
+  
+.subscription__input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  @include mobile {
+    width: 450px;
+  }
+  @include desktop {
+    width: 358px;
+    margin-bottom: 0;
+  }
+  background-color: transparent;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  cursor: pointer;
+  @include font (null, 16px, 1.25, 0.03em);
+  color: var(--white);
+  transition: border-color var(--animation);
+
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+    outline: transparent;
+  }
+  
+  &::placeholder {
+    @include font (null, 16px, 1.25, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscription__btn {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 10px 28px;
+  margin: auto;
+  @include desktop {
+    margin: 0 0 0 10px;
+  }
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+  background-color: var(--secondary-accent-color);
+  }
+}
+
+.subscription__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}

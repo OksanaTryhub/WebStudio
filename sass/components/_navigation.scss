@@ -1,0 +1,82 @@
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  &__menu {
+    display: none;
+    @include tablet {
+      display: flex;
+      gap: 50px;
+      @include font (500, 14px, 1.14, 0.02em)
+    }    
+  }
+}
+
+.site-nav__link {
+  padding: 32px 0;
+  color: var(--main-title-color);
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+  }
+
+  &.current {
+  position: relative;
+  color: var(--accent-color);
+  }
+}
+
+.contact-nav {
+  margin-left: auto;
+  display: none;
+  @include tablet {
+    display: block;
+    @include font (500, 12px, 1.16, 0.02em);
+  }
+  @include desktop {
+    display: flex;
+    gap: 50px;
+    @include font (500, 14px, 1.14, 0.02em);
+  }
+    
+  &__mail {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px
+    }
+  }
+
+  &__link {
+    color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    transition: color var(--animation);
+  
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+  }
+
+  &__icon-mail, 
+  &__icon-tel {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &__icon-tel {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 10px;
+      height: 14px;
+    }
+  }
+
+  &__icon-mail {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 14px;
+      height: 10px;
+    }
+  }
+}
+
