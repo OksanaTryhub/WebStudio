@@ -510,6 +510,10 @@ body {
   color: var(--accent-color);
 }
 
+.mob-current {
+  color: var(--accent-color);
+}
+
 .mobile-contacts {
   margin-bottom: 64px;
 }
